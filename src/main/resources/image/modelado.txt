@@ -1,0 +1,53 @@
+-------------------------------------
+|          EnvioHistorico            |
+-------------------------------------
+| - códigoEnvio: String              |
+| - tipoEnvio: String                |
+| - remitente: Cliente               |
+| - destinatario: Cliente            |
+| - paquetes: List<Paquete>          |
+| - historialEstados: List<Estado>   |
+-------------------------------------
+
+-------------------------------------
+|           Persona                 |
+-------------------------------------
+| - cedula: String                  |
+| - nombre: String                  | LISTOSSS
+| - direccion: String               |
+| - ciudad: String                  |
+| - telefono: String                |
+| - correoElectronico: String       |
+-------------------------------------
+
+-------------------------------------
+|           Paquete                 |
+-------------------------------------
+| - peso: double                    |  LISTOSSS
+| - descripcion: String             |
+| - valor: double          |
+-------------------------------------
+
+-------------------------------------
+|           Estados                 |
+-------------------------------------
+| - fecha: Date                     | LISTOSS
+| - descripcion: String             |
+| - estado: String                  |
+-------------------------------------
+
+-------------------------------------
+|           Factura                  |
+-------------------------------------  Listos
+| - codigoEnvio: String             |
+| - total: double                   |
+| - subtotal: double                |
+-------------------------------------
+
+Logica
+ingresa al inicio de ahi pasa ha hacer el emisor se registran todos los datos, si el usuario existe se rellena y se actualiza en caso de que
+hayan cambios en su información cargada , si no existe lo creo, después lo redirige a la pagina receptor donde se hace el mismos proceso de emisor
+luego de esto se redirige a la  pagina de registro del producto donde se le enviara por singelton las cedulas del emisor y receptor luego de esto se
+calcula el valor del paquete y se le da crear esto hace que se guarde atomaticamente un registro en estado de creado y una factura y se le enviara un
+correo y mesaje con la confirmación. tanto al emisor como el receptor.
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+
+<?import javafx.scene.text.Font?>
+<StackPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="co.edu.uniquindio.envio.controlador.Paquetes">
+
+
+    <VBox alignment="CENTER" spacing="20" >
+        <Label text="Paquetes" >
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+            <Label fx:id="code" text="Codigo: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="txtCode" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="210.0" prefHeight="30.0" minHeight="10.0" />
+        </GridPane>
+        <Button text="Buscar" fx:id="btnBuscar" onAction="#buscar" minHeight="30.0" minWidth="120.0" style="-fx-background-color: linear-gradient(to right,#E68745, #E36810);-fx-text-fill: white;-fx-font-size: 15px; -fx-font-style: oblique;"/>
+
+        <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+            <TableView fx:id="tablaPaquetes" prefHeight="100.0" prefWidth="310.0" style="-fx-background-color: lightgray; -fx-border-color: #E68745; -fx-border-radius: 5px;">
+                <columns>
+                    <TableColumn prefWidth="100.0" text="Descripción" fx:id="descri"/>
+                    <TableColumn prefWidth="100.0" text="Peso" fx:id="pesos"/>
+                </columns>
+            </TableView>
+        </GridPane>
+
+    </VBox>
+</StackPane>

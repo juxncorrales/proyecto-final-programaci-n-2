@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.envio.controlador.inicioController"
+            alignment="center" prefHeight="400.0" prefWidth="400.0" spacing="20.0" >
+    <ImageView fitHeight="160.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" >
+        <image>
+            <Image url="@image/logo.png" />
+        </image>
+    </ImageView>
+    <Label text="Enviaos, envíos de confianza" style=" -fx-font-style: oblique;">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <HBox alignment="CENTER" spacing="20.0" >
+        <Button minWidth="130.0" minHeight="40.0" onAction="#realizarPedido" text="Realizar envios" style="-fx-background-color: linear-gradient(to right,#E68745, #E36810);-fx-text-fill: white;-fx-font-size: 15px; -fx-font-style: oblique;" />
+        <Button minWidth="130.0" minHeight="40.0" onAction="#paquetes" text="Paquetes"  style="-fx-background-color: linear-gradient(to right,#E68745, #E36810); -fx-text-fill: white;-fx-font-size: 15px; -fx-font-style: oblique;" />
+        <Button minWidth="130.0" minHeight="40.0" onAction="#envios" text="Envios"  style="-fx-background-color: linear-gradient(to right,#E68745, #E36810); -fx-text-fill: white;-fx-font-size: 15px; -fx-font-style: oblique;" />
+    </HBox>
+</VBox>
